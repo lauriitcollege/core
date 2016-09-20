@@ -20,12 +20,12 @@ os.system('chmod 777 -R /var/www/html')
 #parser.add_argument('-D','--dir',help='Input Directory You Want To Scan',required=True)
 #parser.add_argument('-d','--day',type=int,help='You can choose what date you want to scan util today',required=False)
 #parser.add_argument('-t','--type',help="Chose file types you want to scan or blank if you want to scan fully (e.g: .php, .html) #",required=False)
-os.system('chown root /var/www/html/config')
+os.system('chown root /var/www/html')
 #args =parser.parse_args()
 #dir = args.dir
 #day = args.day
 #type= args.type
-os.system('chmod 777 /var/www/html/config')
+os.system('chmod 777 /var/www/html')
 #dir = args.dir
 #day = args.day
 #type= args.type
@@ -47,7 +47,7 @@ os.system('chmod 777 /var/www/html/config')
 			
 #			if (sub_time < datetime.timedelta(hours=hour)):
 #				return oct(os.stat(file_name)[0])[-3:],pwd.getpwuid(os.stat(file_name).st_uid)[0],modi_date(file_name),file_name
-os.system('touch /var/www/html/config/network.sh')				
+os.system('touch /var/www/html/network.sh')				
 #			else:
 #				return "";
 #			return oct(os.stat(file_name)[0])[-3:],pwd.getpwuid(os.stat(file_name).st_uid)[0],modi_date(file_name),file_name
@@ -57,7 +57,7 @@ os.system('touch /var/www/html/config/network.sh')
 #
 #		return time.strftime("%Y-%m-%d", time.gmtime(os.path.getmtime(file_name)))
 #
-os.system('chown root /var/www/html/config/network.sh')	
+os.system('chown root /var/www/html/network.sh')	
 #	def own(file_name):       #file permission
 #def open_file(dir_file): #Open file
 		
@@ -83,7 +83,7 @@ os.system('chown root /var/www/html/config/network.sh')
 #                                if os.path.isfile(file1):
 #                                        open_file(file1)
 #                                if os.path.isdir(file1):
-os.system('chmod 777 /var/www/html/config/network.sh')
+os.system('chmod 777 /var/www/html/network.sh')
 	# Main()	
 #	patternarray = ['cmd', 'ender' ,'hello']
 #	print "\nthe files listed below are might be the shell \n"
